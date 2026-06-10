@@ -1,90 +1,153 @@
-#BERT-Based Sentiment Analysis on IMDb Reviews
+# 🎬 BERT-Based Sentiment Analysis and Aspect-Based Sentiment Analysis on IMDb Reviews
 
-Project Overview:
-This project implements Sentiment Analysis using BERT (Bidirectional Encoder Representations from Transformers) on the IMDb movie reviews dataset. The model classifies reviews into sentiment categories and further performs Aspect-Based Sentiment Analysis (ABSA) to identify sentiments associated with specific movie-related aspects such as acting, direction, story, screenplay, music, and more.
+## 📌 Project Description
 
-Features:
-Data preprocessing and cleaning
-Exploratory Data Analysis (EDA)
-Review length and rating analysis
-Sentiment classification using BERT
-Aspect extraction from movie reviews
-Aspect-Based Sentiment Analysis (ABSA)
-Performance evaluation using accuracy and classification metrics
-Visualization of model performance
+This project focuses on analyzing movie reviews from the IMDb dataset using BERT (Bidirectional Encoder Representations from Transformers), a state-of-the-art Natural Language Processing (NLP) model developed by Google.
 
-Dataset:
-The project uses the IMDb Reviews Dataset, containing:
-Review Text
-Movie Title
-User Rating
-Sentiment Labels
+The objective is to classify movie reviews into positive and negative sentiments and further perform Aspect-Based Sentiment Analysis (ABSA) to identify sentiments related to specific movie aspects such as acting, direction, screenplay, story, music, cinematography, and visual effects.
 
-Technologies Used:
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-learn
-PyTorch
-Hugging Face Transformers
-BERT
+By leveraging the power of BERT, the model achieves high accuracy in understanding contextual meanings within reviews and provides detailed sentiment insights at both review and aspect levels.
 
-Workflow:
-Load and preprocess IMDb review data.
-Perform exploratory data analysis.
-Clean and tokenize review text.
-Fine-tune a pre-trained BERT model.
-Predict review sentiments.
-Extract movie-related aspects from reviews.
-Perform aspect-level sentiment classification.
-Evaluate model performance using:
-Accuracy Score
-Classification Report
-Export aspect sentiment results.
+---
 
-Results:
-Model	Accuracy
-BERT (Pretrained)	85.0%
-Aspect-Based Sentiment (Before Dictionary Filtering)	85.7%
-Aspect-Based Sentiment (After Dictionary Filtering)	86.3%
-The aspect-based approach improved sentiment classification performance by focusing on movie-specific aspects.
+## 🎯 Objectives
 
-Output:
-The project generates:
-Sentiment predictions
-Aspect-level sentiment predictions
-Accuracy comparison charts
-aspect_sentiment_dataset.csv
+* Build a sentiment analysis model using BERT.
+* Classify IMDb movie reviews as positive or negative.
+* Extract important aspects from movie reviews.
+* Perform aspect-level sentiment classification.
+* Compare sentiment analysis performance before and after aspect filtering.
+* Visualize sentiment trends and model performance.
 
-Example Output:
-{
-    "acting": "Positive",
-    "story": "Negative",
-    "music": "Positive"
-}
+---
 
-Installation:
+## 🛠️ Technologies Used
 
-Clone the repository:
-git clone https://github.com/your-username/bert-sentiment-analysis.git
-cd bert-sentiment-analysis
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* PyTorch
+* Hugging Face Transformers
+* BERT Model
+* Natural Language Processing (NLP)
 
-Install dependencies:
-pip install -r requirements.txt
+---
 
-Run the notebook:
-jupyter notebook
+## 📂 Dataset
 
-Future Improvements:
-Multi-aspect sentiment detection
-Real-time review analysis
-Deployment using Flask/Streamlit
-Support for multiple domains beyond movie reviews
+The project uses the IMDb Movie Reviews Dataset containing:
 
-Author:
-Yaswitha
+* Movie Title
+* Review Text
+* User Rating
+* Sentiment Labels
+* Review Metadata
 
-License:
-This project is intended for educational and research purposes.
+---
+
+## ⚙️ Project Workflow
+
+### 1. Data Collection
+
+* Load IMDb movie review dataset.
+* Inspect data structure and features.
+
+### 2. Data Preprocessing
+
+* Remove missing values.
+* Clean review text.
+* Convert text into suitable format for BERT.
+
+### 3. Exploratory Data Analysis (EDA)
+
+* Analyze review distributions.
+* Study review lengths.
+* Examine rating patterns.
+* Visualize sentiment distributions.
+
+### 4. Sentiment Analysis using BERT
+
+* Tokenize reviews using BERT tokenizer.
+* Fine-tune the pre-trained BERT model.
+* Train the sentiment classification model.
+* Generate sentiment predictions.
+
+### 5. Aspect Extraction
+
+* Identify movie-related aspects from reviews.
+* Create aspect dictionaries.
+* Filter relevant aspect terms.
+
+### 6. Aspect-Based Sentiment Analysis (ABSA)
+
+* Analyze sentiment for each extracted aspect.
+* Classify aspect sentiment as positive or negative.
+* Generate aspect-level sentiment datasets.
+
+### 7. Model Evaluation
+
+* Calculate Accuracy Score.
+* Generate Classification Report.
+* Compare performance metrics.
+
+---
+
+## 📊 Results
+
+* BERT Sentiment Analysis Accuracy: 85.0%
+* ABSA Accuracy Before Dictionary Filtering: 85.7%
+* ABSA Accuracy After Dictionary Filtering: 86.3%
+
+### Key Findings
+
+* BERT effectively captures contextual information from movie reviews.
+* Aspect-Based Sentiment Analysis provides deeper insights into user opinions.
+* Dictionary filtering improves sentiment classification performance.
+* Aspect-level analysis helps identify strengths and weaknesses of movies.
+
+---
+
+## 📈 Output Generated
+
+* Sentiment Prediction Results
+* Aspect Sentiment Dataset
+* Accuracy Comparison Charts
+* Performance Evaluation Reports
+* Visualizations and Graphs
+
+---
+
+## 🚀 Future Enhancements
+
+* Multi-Class Sentiment Classification
+* Real-Time Review Analysis
+* Deployment using Flask or Streamlit
+* Support for Multiple Domains
+* Integration with Recommendation Systems
+* Enhanced Aspect Extraction Techniques
+
+---
+
+## 📚 Applications
+
+* Movie Review Analysis
+* Customer Feedback Analysis
+* Product Review Mining
+* Opinion Mining
+* Business Intelligence
+* Social Media Sentiment Analysis
+
+---
+
+## 👨‍💻 Author
+
+**Yaswitha**
+
+---
+
+## ⭐ Conclusion
+
+This project demonstrates the effectiveness of BERT for sentiment analysis and aspect-based sentiment analysis on IMDb movie reviews. By combining contextual language understanding with aspect-level opinion mining, the system provides detailed and accurate sentiment insights that can be useful for businesses, researchers, and recommendation platforms.
