@@ -1,4 +1,4 @@
-BERT-Based Sentiment Analysis on IMDb Reviews
+#BERT-Based Sentiment Analysis on IMDb Reviews
 
 Project Overview:
 This project implements Sentiment Analysis using BERT (Bidirectional Encoder Representations from Transformers) on the IMDb movie reviews dataset. The model classifies reviews into sentiment categories and further performs Aspect-Based Sentiment Analysis (ABSA) to identify sentiments associated with specific movie-related aspects such as acting, direction, story, screenplay, music, and more.
